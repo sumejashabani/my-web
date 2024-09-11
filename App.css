@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #E0E0E0;
+    margin-top: 60px;
+}
+.navbar-container {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+    color: rgb(216, 123, 138);
+    padding: 10px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    height: 60px;
+}
+.navbar-right {
+    position: relative;
+    align-items: center;
+    margin-left: auto;
+}
+.nav-list li {
+    margin-left: 15px;
+    position: relative;
+    padding: 13px;
+}
+.nav-list a {
+    display: inline; 
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.nav-list a:hover {
+    color: gray;
+}
+.nav-list .dropdown .dropbtn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    position: relative;
+}
+.nav-list .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    left: -80px;
+    top: 75%; 
+    margin-top: 1px; 
+    flex-direction: row;
+    padding: 3px 0; 
+}
+.nav-list .dropdown-content a {
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: left;
+    top: 0;
+    cursor: pointer;
+}
+.nav-list .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.nav-list .dropdown:hover .dropdown-content,
+.nav-list .dropdown-content:hover {
+    display: flex; 
+}
+.auth-form {
+    position: fixed;
+    top: 73px;
+    z-index: 100;
+    right: 20px; 
+    width: 300px; 
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
+    transition: all 0.3s ease-in-out; 
+}
+.auth-form form {
+    display: flex;
+    flex-direction: column;
+}
+.auth-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+.auth-form input[type="text"],
+.auth-form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+.auth-form input[type="text"]:focus,
+.auth-form input[type="password"]:focus {
+    border-color: rgb(216, 123, 138);
+}
+.auth-form button[type="submit"] {
+    background-color: rgb(216, 123, 138);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.auth-form button[type="submit"]:hover {
+    background-color: #c06b6b; 
+}
+.auth-form button[type="button"] {
+    background-color: transparent;
+    color: rgb(216, 123, 138);
+    border: none;
+    cursor: pointer;
+    font-size: 20px; /* Increase font size */
+    text-decoration: underline;
+    margin-top: 0px;
+    transition: color 0.3s ease;
+}
+.auth-form p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+.auth-form button[type="button"] {
+    background-color: transparent;
+    color: rgb(216, 123, 138);
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+.auth-form button[type="button"]:hover {
+    color: #c06b6b;
+}
+.auth-form .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: black;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.auth-form .close-btn:hover {
+    color: #c06b6b;
+}
+.banner {
+    background-image: url('kikoheader.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 0;
+}
+.banner h2 {
+    font-size: 3em;
+    margin: 0;
+}
+.content {
+    padding: 20px;
+}
+.section {
+    padding: 20px !important;
+    background-color: #fff !important;
+    border-radius: 8px !important;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center !important;
+}
+.section h2 {
+    font-size: 2.2em !important;
+    color: black !important;
+    margin-bottom: 30px !important;
+}
+.products {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+    justify-content: space-between !important;
+    padding: 0 10px !important;
+}
+.product {
+    background-color: #fff !important;
+    border-radius: 5px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+.product img {
+    width: 85% !important;
+    height: auto !important;
+    margin-bottom: 15px !important;
+}
+.product h3 {
+    font-size: 1.6em !important;
+    margin: 10px 0 !important;
+}
+.product p {
+    font-size: 1.1em !important;
+    color: #666 !important;
+    margin: 5px 0 !important;
+    max-width: 90% !important;
+}
+.product .price {
+    font-weight: bold !important;
+    color: red !important;
+    margin-top: 10px !important;
+    font-size: 1.4em !important;
+}
+.submenu {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    padding: 20px;
+    font-size: 16px;
+    box-shadow: none;
+}
+.search-container {
+    background-color: black;
+    padding: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+.search-group {
+    align-items: center;
+    border: 2px solid rgb(216, 123, 138);
+    border-radius: 4px;
+    background-color: white;
+}
+.icon_iconContainer {
+    padding-top: 10px;
+    color: black;
+    cursor: pointer;
+    margin-top: 0px;
+    display: flex;
+}
+.search-input {
+    border: none;
+    background-color: white;
+    color: rgb(216, 123, 138);
+    padding: 5px;
+    margin-left: 0px; 
+    outline: none;
+}
+.search-input::placeholder {
+    color: rgba(0, 0, 0, 0.7); 
+}
+.search-results {
+    margin-top: 13px; 
+    padding: 10px;
+    background-color: black;
+    border-radius: 4px;
+    display: inline;
+    max-width: 300px;
+    color: rgb(216, 123, 138);
+    position: absolute;
+    z-index: 1;
+    top: 38px; 
+    left: 10px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); 
+}
+.search-results ul {
+    list-style-type: none; /* Removes the bullets */
+    padding: 0; /* Removes default padding */
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 100px;
+    justify-content: space-between;
+}
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+.dropdown-section {
+    margin-right: 20px;
+    flex: 1;
+}
+.dropdown-section h4 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+}
+.dropdown-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.dropdown-section ul li {
+    margin-bottom: 5px;
+}
+.dropdown-section ul li a {
+    color: #333;
+    text-decoration: none;
+}
+.dropdown-section ul li a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+.dropbtn {
+    cursor: pointer;
+}
+footer {
+    background-color: #000; /* Sets the background color to black */
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* Sets the text color to white */
+    position: relative;
+}
+footer .social-icons {
+    margin: 10px 0;
+}
+footer .social-icons a {
+    color: #fff; /* Ensures the social icons are white */
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+body footer p {
+    background-color: #000 !important; 
+    color: #fff !important; 
+    margin-top: 15px !important;
+}
