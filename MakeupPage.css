@@ -1,0 +1,140 @@
+body {
+  font-family: 'Ubuntu';
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+.navbar-container {
+  background-color: #fff;
+  padding: 10px;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.nav-list li {
+  position: relative;
+  margin-right: 20px;
+}
+.nav-list a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+.nav-list a:hover {
+  color: #000;
+  border-bottom: 2px solid #000; /* Underline effect */
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: flex;
+  padding: 20px;
+  border: 1px solid #ddd;
+  width: 1000px; /* Adjust width to accommodate the menu */
+  justify-content: space-between;
+}
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+.dropdown-section {
+  margin-right: 20px;
+  flex: 1;
+}
+.dropdown-section h4 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+.dropdown-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.dropdown-section ul li {
+  margin-bottom: 5px;
+}
+.dropdown-section ul li a {
+  color: #333;
+  text-decoration: none;
+}
+.dropdown-section ul li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.makeup-page-container {
+  padding: 15px;
+  text-align: center;
+  margin-top: 50px;
+  text-decoration: none;
+}
+.products-grid {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  transition: opacity 0.5s ease-in-out;
+  text-decoration: none;
+}
+.product-card {
+  flex: 0 0 auto; 
+  width: 280px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+.fade {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -260px;
+  height: 50px;
+  position: relative;
+}
+.carousel-controls .prev, .carousel-controls .next {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 7px;
+  margin: 2px;
+  cursor: pointer;
+  bottom: 0;
+}
+.carousel-controls .prev {
+  left: 20px; 
+}
+.carousel-controls .next {
+  right: 20px; 
+}
+.carousel-controls .prev:hover, .carousel-controls .next:hover {
+  background-color: #555;
+}
+.products-grid .product-card a {
+  text-decoration: none; 
+  color: inherit; 
+}

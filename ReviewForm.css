@@ -1,0 +1,19 @@
+.star-rating {
+    display: flex;
+    font-size: 2rem; 
+    cursor: pointer;
+    color: white
+  }
+  /* Individual Star Styling */
+  .star {
+    transition: color 0.2s; /* Smooth color transition */
+  }
+  /* Highlight stars on hover */
+  .star:hover,
+  .star:hover {
+    fill: #f5c518; /* Gold color for stars when hovered */
+  }
+  /* Highlight stars up to the clicked star */
+  .star.filled{
+      color: #f5c518;
+  }
