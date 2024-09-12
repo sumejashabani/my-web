@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3e779d30.css",
+    "main.js": "/static/js/main.13d47f4f.js",
+    "static/media/bronzer.jpeg": "/static/media/bronzer.fbc56206b5ee36ad4059.jpeg",
+    "static/media/glossypink.jpeg": "/static/media/glossypink.3235d8d130dde7bac496.jpeg",
+    "static/media/kikoheader.jpg": "/static/media/kikoheader.a23c4d8e27171c3fa176.jpg",
+    "static/media/promo.jpg": "/static/media/promo.4e74129444c83d79ccfa.jpg",
+    "static/media/blush.jpg": "/static/media/blush.313b510c169f0f06a96e.jpg",
+    "static/media/mascara.jpg": "/static/media/mascara.0bd1117a24488d575938.jpg",
+    "static/media/lipstick.jpg": "/static/media/lipstick.9e89e7f26f80e5e75afc.jpg",
+    "static/media/eyeliner.jpeg": "/static/media/eyeliner.b12a56667e79da7e5219.jpeg",
+    "static/media/concealer.jpg": "/static/media/concealer.d7999a5bc1acb618ae10.jpg",
+    "static/media/foundation.jpg": "/static/media/foundation.6490f2770ea169c7d0ad.jpg",
+    "static/media/lip.jpg": "/static/media/lip.913b18332b1d28496abe.jpg",
+    "index.html": "/index.html",
+    "main.3e779d30.css.map": "/static/css/main.3e779d30.css.map",
+    "main.13d47f4f.js.map": "/static/js/main.13d47f4f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e779d30.css",
+    "static/js/main.13d47f4f.js"
+  ]
+}
